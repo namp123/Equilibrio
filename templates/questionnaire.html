@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+  <a id="ek" class="navbar-brand" href="/">Equilibrio</a>
+  <ul class="nav nav-pills">
+  </ul>
+  </nav>
+  <br>
+  <br>
+  <form action="/appsubmission" method="POST">
+  <center><strong><h5>The following fields are mandatory.</h5></strong></center>
+  <br>
+  <center><div id="b1" class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"><h6>First Name</h6></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" name="name1" placeholder="Enter your first name" required>
+    </div>
+  </div></center>
+  <center><div id="b1" class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label"><h6>Last Name</h6></label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputEmail3" name="name2" placeholder="Enter your last name" required>
+    </div>
+  </div></center>
+  <center><div id="b1" class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label"><h6>Age</h6></label>
+    <div class="col-sm-10">
+      <input type="number" min=1 class="form-control" id="inputPassword3" name="age" placeholder="Select your age" required>
+    </div>
+  </div></center>
+  <div class="gen">
+    <center><h6>Gender  <label for="Male"><input id="Male" type="radio" name="choice" value="Male" required >Male</label>
+    <label for="Female"><input id="Female" type="radio" name="choice" value="Female" required>Female</center></label></h6>
+    </div>
+  <br>
+  <br>
+  <center><strong><h5>Please answer the following questions to help formulate your report.</h5></strong></center>
+  <br>
+  <center><h6>QUESTION1: I don't tire very easily.</h6></center>
+  <center><div class="btn-group btn-group-toggle" data-toggle="buttons">
+  <label for="Yes1" class="btn btn-secondary active">
+    <input type="radio" name="op1" id="Yes1" value='Yes' required>Yes
+  </label>
+  <label for="No1" class="btn btn-secondary">
+    <input type="radio" name="op1" id="No1" value='No' required>No
+  </label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION2: I am troubled by nausea attacks.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes2" class="btn btn-secondary active">
+  <input type="radio" name="op2" id="Yes2" value="Yes" required> Yes
+</label>
+<label for="No2" class="btn btn-secondary">
+  <input type="radio" name="op2" id="No2" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION3: I frequently notice my hand shakes whenever I try doing something.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes3" class="btn btn-secondary active">
+  <input type="radio" name="op3" id="Yes3" value="Yes" required> Yes
+</label>
+<label for="No3" class="btn btn-secondary">
+  <input type="radio" name="op3" id="No3" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION4: I sweat very easily, even on cool days.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes4" class="btn btn-secondary active">
+  <input type="radio" name="op4" id="Yes4" value="Yes" required> Yes
+</label>
+<label for="No4" class="btn btn-secondary">
+  <input type="radio" name="op4" id="No4" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION5: I am very rarely short of breath.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes5" class="btn btn-secondary active">
+  <input type="radio" name="op5" id="Yes5" value="Yes" required> Yes
+</label>
+<label for="No5" class="btn btn-secondary">
+  <input type="radio" name="op5" id="No5" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION6: I feel hungry quite often.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes6" class="btn btn-secondary active">
+  <input type="radio" name="op6" id="Yes6" value="Yes" required> Yes
+</label>
+<label for="No6" class="btn btn-secondary">
+  <input type="radio" name="op6" id="No6" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION7: I have to frequently deal with stomach troubles.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes7" class="btn btn-secondary active">
+  <input type="radio" name="op7" id="Yes7" value="Yes" required> Yes
+</label>
+<label for="No7" class="btn btn-secondary">
+  <input type="radio" name="op7" id="No7" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION8: My sleep is usually fitful and disturbed.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes8" class="btn btn-secondary active">
+  <input type="radio" name="op8" id="Yes8" value="Yes" required> Yes
+</label>
+<label for="No8" class="btn btn-secondary">
+  <input type="radio" name="op8" id="No8" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION9: I am quite a sensitive person.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes9" class="btn btn-secondary active">
+  <input type="radio" name="op9" id="Yes9" value="Yes" required> Yes
+</label>
+<label for="No9" class="btn btn-secondary">
+  <input type="radio" name="op9" id="No9" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION10: I am usually calm.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes10" class="btn btn-secondary active">
+  <input type="radio" name="op10" id="Yes10" value="Yes" required> Yes
+</label>
+<label for="No10" class="btn btn-secondary">
+  <input type="radio" name="op10" id="No10" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION11: I have at times been worried beyond reason over something that really did not matter.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes11" class="btn btn-secondary active">
+  <input type="radio" name="op11" id="Yes11" value="Yes" required> Yes
+</label>
+<label for="No11" class="btn btn-secondary">
+  <input type="radio" name="op11" id="No11" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION12: I find it hard to keep my mind on a task or job.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes12" class="btn btn-secondary active">
+  <input type="radio" name="op12" id="Yes12" value="Yes" required> Yes
+</label>
+<label for="No12" class="btn btn-secondary">
+  <input type="radio" name="op12" id="No12" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION13: I am usually quite self-conscious.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes13" class="btn btn-secondary active">
+  <input type="radio" name="op13" id="Yes13" value="Yes" required> Yes
+</label>
+<label for="No13" class="btn btn-secondary">
+  <input type="radio" name="op13" id="No13" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION14: At times I think I am no good at all.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes14" class="btn btn-secondary active">
+  <input type="radio" name="op14" id="Yes14" value="Yes" required> Yes
+</label>
+<label for="No14" class="btn btn-secondary">
+  <input type="radio" name="op14" id="No14" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><h6>QUESTION15: I shrink from facing a crisis of difficulty.</h6>
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+<label for="Yes15" class="btn btn-secondary active">
+  <input type="radio" name="op15" id="Yes15" value="Yes" required> Yes
+</label>
+<label for="No15" class="btn btn-secondary">
+  <input type="radio" name="op15" id="No15" value="No" required> No
+</label>
+</div></center>
+<br>
+<br>
+<center><div id="b3" class="form-group row">
+    <div class="col-sm-10 offset-sm-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox"  id="gridCheck1" required>
+        <label class="form-check-label" for="gridCheck1">
+<p>I hereby declare that the information provided is true and correct. I also understand that any willful dishonesty may alter the final predictive outcome and result in an inaccurate and unreliable report.</p>
+  </label>
+      </div>
+    </div>
+  </div></center>
+  <center><input type="submit" class="btn btn-dark" name="submit" value="Submit"></center>
+</form>
+<br>
+<br>
+<br>
+<footer id="b5">
+<br>
+<br>
+<p><strong>Establishment</strong></p>
+<p>Reva University - Rukmini Knowledge Park, Kattigenahalli, Yelahanka, Bengaluru, Karnataka 560064</p>
+<br>
+<p><strong>Creators</strong></p>
+<div class="np"><p>Namitha Manoj Pillai</p>
+<p>+91 9845744299</p>
+<p><p><a id="mail1" href="mailto:namithapillai25@gmail.com"><u>namithapillai25@gmail.com</u></a></p></p></div>
+<div class="ss"><p>Shraddha Sadugol</p>
+<p>+91 7619606045</p>
+<p><p><a id="mail1" href="mailto:shraddhasadugol65@gmail.com"><u>shraddhasadugol65@gmail.com</u></a></p></p></div>
+<div class="sm"><p>Smrithi Murali Menon</p>
+<p>+91 9986426356</p>
+<p><p><a id="mail1" href="mailto:smrithimurali1504@gmail.com"><u>smrithimurali1504@gmail.com</u></a></p></p></div>
+<br>
+<br>
+</footer>
+  </body>
+</html>
