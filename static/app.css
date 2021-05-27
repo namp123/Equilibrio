@@ -1,0 +1,107 @@
+body{
+  /*background:#edf0f5;*/
+  background-image: linear-gradient(#edf0f5, #8badad);
+  overflow-x: hidden
+
+}
+img{
+  padding-left:90px;
+  padding-right:90px;
+  padding-bottom:40px;
+  width: 500px;
+  height:600px;
+}
+p{
+  padding-left:90px;
+  padding-right:90px;
+}
+h4{
+  padding-left:90px;
+}
+#uno{
+  padding-right: 100px;
+  text-align: center;
+}
+#dos2{
+  background-color:#495057;
+}
+#dos1{
+  color:#343a40;
+}
+#ek{
+  font-family: 'DM Serif Text', serif;
+  color:#343a40;
+  font-size:30px;
+}
+#b1{
+  padding-left: 300px;
+  padding-right: 300px;
+}
+#b3{
+  padding-right: 150px;
+  padding left:150px;
+}
+#b5{
+  background-color:#fff;
+  font-weight:400;
+  font-size: 16px;
+}
+.ss{
+  position: relative;
+  left:500px;
+  bottom:123px;
+}
+.sm{
+  position: relative;
+  left: 1000px;
+  bottom:241px;
+}
+#un1{
+  text-align: center;
+  font-size: 20px;
+}
+#lis{
+  padding-left:90px;
+  padding-right:90px;
+}
+#anchor{
+  color:#343a40;
+}
+#b6{
+  text-align: left;
+  background-color:#fff;
+  font-weight:400;
+  font-size: 16px;
+}
+#un{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+#uk{
+  font-weight: 400;
+  font-size: 18px;
+}
+#mail2{
+  color:#343a40;
+}
+#mail1{
+  color:#343a40;
+}
+#About1{
+  font-size: 24px;
+}
+#About2{
+  font-size: 18px;
+}
+#agreement{
+  text-align: center;
+  padding-left: 90px;
+  padding-right: 90px;
+  right:200px;
+}
+.gen{
+  position: relative;
+  right:265px;
+  font-weight: normal;
+}
